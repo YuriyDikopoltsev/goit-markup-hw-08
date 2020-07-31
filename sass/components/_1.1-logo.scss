@@ -1,0 +1,35 @@
+.logo {
+  display: flex;
+  font-family: $font-family-logo;
+  font-style: Bold;
+  font-size: 26px;
+  letter-spacing: 3%;
+
+  & .studio {
+    transition: color $timing-function $transition-duration;
+
+    .logo &:hover,
+    .logo &:focus {
+      outline: none;
+      color: $accent-color-primary;
+    }
+  }
+  & .web {
+    padding-right: 9px;
+    color: $accent-color-primary;
+    transition: color $timing-function $transition-duration;
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $text-color-title;
+    }
+  }
+}
+.footer .studio {
+  color: $text-color-second;
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $accent-color-primary;
+  }
+}

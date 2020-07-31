@@ -1,0 +1,52 @@
+.advantages {
+  padding-bottom: 94px;
+  & h2 {
+    display: none;
+  }
+  & .title {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  display: flex;
+
+  & .text {
+    max-width: 270px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+  & .list {
+    display: flex;
+    & .item::before {
+      content: '';
+      display: block;
+      margin-bottom: 30px;
+      background-color: #f5f4fa;
+      height: 120px;
+      border-radius: 4px;
+      padding: 25px 102px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    & .item:nth-child(1)::before {
+      background-image: url('../images/AdvantDetails.svg');
+    }
+    & .item:nth-child(2)::before {
+      background-image: url('../images/AdvantPunctual.svg');
+    }
+    & .item:nth-child(3)::before {
+      background-image: url('../images/AdvantPlanning.svg');
+    }
+    & .item:nth-child(4)::before {
+      background-image: url('../images/AdvantModerntech.svg');
+    }
+    & .item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

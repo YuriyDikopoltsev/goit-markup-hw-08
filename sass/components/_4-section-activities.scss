@@ -1,0 +1,35 @@
+.activities {
+  padding-bottom: 94px;
+
+  & .title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  & .list {
+    display: flex;
+    & .item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    & .item {
+      position: relative;
+    }
+  }
+  & .text {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-color-second;
+    background-image: $linear-gradient-hero;
+    min-width: 370px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    bottom: 0;
+    position: absolute;
+  }
+}

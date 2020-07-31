@@ -1,0 +1,23 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  z-index: 2;
+  background-color: $background-color-primary;
+  & .container {
+    display: flex;
+    align-items: center;
+    height: 26px;
+  }
+  & .navigation {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    margin-left: 85px;
+    margin-right: 331px;
+  }
+}
