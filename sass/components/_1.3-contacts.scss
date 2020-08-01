@@ -1,55 +1,55 @@
 @media screen and (min-width: $mobile) {
 }
 @media screen and (min-width: $tablet) {
-  .address {
-    & .list {
-      align-items: center;
-      & .item {
-        align-items: center;
-        justify-content: center;
-        min-width: 160px;
-      }
-      & .link:hover,
-      :focus {
-        color: $accent-color-primary;
-        fill: $accent-color-primary;
-      }
-    }
-    & .item:not(:last-child) {
-      margin-bottom: 10px;
-    }
+  // .address {
+  //   & .list {
+  //     align-items: center;
+  //     & .item {
+  //       align-items: center;
+  //       justify-content: center;
+  //       min-width: 160px;
+  //     }
+  //     & .link:hover,
+  //     :focus {
+  //       color: $accent-color-primary;
+  //       fill: $accent-color-primary;
+  //     }
+  //   }
+  //   & .item:not(:last-child) {
+  //     margin-bottom: 10px;
+  //   }
 
-    & .link {
-      display: flex;
-      color: $text-color-primary;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.02em;
-    }
-    & .image {
-      margin-right: 10px;
-      fill: currentColor;
-      &:first-child {
-        padding-top: 2px;
-        width: 16px;
-        height: 12px;
-      }
-      &:last-child {
-        width: 10px;
-        height: 15px;
-      }
-    }
-  }
+  //   & .link {
+  //     display: flex;
+  //     color: $text-color-primary;
+  //     font-style: normal;
+  //     font-weight: 500;
+  //     font-size: 14px;
+  //     line-height: 16px;
+  //     letter-spacing: 0.02em;
+  //   }
+  //   & .image {
+  //     margin-right: 10px;
+  //     fill: currentColor;
+  //     &:first-child {
+  //       padding-top: 2px;
+  //       width: 16px;
+  //       height: 12px;
+  //     }
+  //     &:last-child {
+  //       width: 10px;
+  //       height: 15px;
+  //     }
+  //   }
+  // }
 }
 @media screen and (min-width: $desktop) {
   .address {
     & .list {
+      padding-top: auto;
+      padding-bottom: auto;
       display: flex;
-      vertical-align: middle;
-      align-items: center;
-
+      align-items: left;
       & .item {
         align-items: center;
         justify-content: center;
