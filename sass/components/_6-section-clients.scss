@@ -1,46 +1,46 @@
-.client {
-  padding-bottom: 94px;
-  & .title {
-    margin-bottom: 50px;
-    text-align: center;
-  }
-}
-.client-list {
-  display: flex;
-  & .item:not(:last-child) {
-    margin-right: 30px;
-  }
-  & .link :hover,
-  & .link:focus {
-    border-color: $accent-color-primary;
-  }
-  & .client-link :hover,
-  & .client-link:focus {
-    border-color: $accent-color-primary;
-  }
-}
-
-.client .link:hover .client-icon,
-.client .link:focus .client-icon {
-  fill: $accent-color-primary;
-}
-.client-link .link {
-  display: flex;
-  height: 90px;
-  width: 170px;
-  border-radius: 4px;
-  color: #afb1b8;
-  border: 1px solid #afb1b8;
-  justify-content: center;
-  align-items: center;
-}
-.client-icon {
-  display: flex;
-  fill: currentColor;
-}
 @media screen and (min-width: $mobile) {
 }
 @media screen and (min-width: $tablet) {
 }
 @media screen and (min-width: $desktop) {
+  .client {
+    padding-bottom: 94px;
+    & .title {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  }
+  .client-list {
+    display: flex;
+    & .item:not(:last-child) {
+      margin-right: 30px;
+    }
+    & .link :hover,
+    & .link:focus {
+      border-color: $accent-color-primary;
+    }
+    & .client-link :hover,
+    & .client-link:focus {
+      border-color: $accent-color-primary;
+    }
+  }
+
+  .client .link:hover .client-icon,
+  .client .link:focus .client-icon {
+    fill: $accent-color-primary;
+  }
+  .client-link .link {
+    display: flex;
+    height: 90px;
+    width: 170px;
+    border-radius: 4px;
+    color: #afb1b8;
+    border: 1px solid #afb1b8;
+    justify-content: center;
+    align-items: center;
+  }
+  .client-icon {
+    display: flex;
+    fill: currentColor;
+  }
 }

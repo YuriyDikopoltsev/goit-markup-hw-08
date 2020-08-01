@@ -1,5 +1,5 @@
 .advantages {
-  padding-bottom: 94px;
+  display: flex;
   & h2 {
     display: none;
   }
@@ -11,17 +11,12 @@
     text-transform: uppercase;
     margin-bottom: 10px;
   }
-
-  display: flex;
-
   & .text {
-    max-width: 270px;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
   }
   & .list {
-    display: flex;
     & .item::before {
       content: '';
       display: block;
@@ -45,14 +40,37 @@
     & .item:nth-child(4)::before {
       background-image: url('../images/AdvantModerntech.svg');
     }
-    & .item:not(:last-child) {
-      margin-right: 30px;
-    }
   }
 }
+
 @media screen and (min-width: $mobile) {
+  .advantages {
+    text-align: center;
+    & .text {
+      max-width: 450px;
+    }
+    & .list {
+      & .item:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
 @media screen and (min-width: $tablet) {
 }
 @media screen and (min-width: $desktop) {
+  .advantages {
+    padding-bottom: 94px;
+    display: flex;
+
+    & .text {
+      max-width: 270px;
+    }
+    & .list {
+      display: flex;
+      & .item:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
 }

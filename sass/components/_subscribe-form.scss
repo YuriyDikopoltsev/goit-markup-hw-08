@@ -1,167 +1,3 @@
-.form {
-  background-color: $background-color-primary;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
-  justify-content: center;
-  width: 450px;
-  height: 610px;
-  padding: 40px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  color: $text-color-primary;
-}
-.form-icon {
-  display: block;
-}
-.close-button {
-  position: absolute;
-  display: inline-block;
-  top: 8px;
-  right: 8px;
-  padding: 9px;
-  transition: fill var(--duration) var(--function);
-  fill: var(--primary-title-color);
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  outline: none;
-  cursor: pointer;
-  background-color: white;
-}
-.close-button:hover,
-.close-button:focus {
-  outline: none;
-  fill: $accent-color-primary;
-}
-.form-field {
-  justify-content: left;
-  align-items: center;
-  padding-left: 19px;
-  display: flex;
-  margin-bottom: 30px;
-  min-height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  position: relative;
-}
-.form-field:hover,
-.form-field:focus {
-  outline: none;
-  fill: $accent-color-primary;
-  border-color: $accent-color-primary;
-}
-.form-field > .form-icon {
-  display: block;
-  position: absolute;
-}
-.form-header {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  max-width: 370px;
-  margin-top: 2px;
-  max-width: 370px;
-  margin-bottom: 30px;
-}
-.form-list {
-  max-width: 370px;
-}
-.form-field textarea {
-  border: none;
-  padding-top: 12px;
-}
-
-.form-input {
-  padding-left: 11px;
-}
-.form-field:hover .label,
-.form-input:not(:placeholder-shown) + .label,
-.form-field:focus-within .label {
-  transform: translateY(-33px) translateX(-20px);
-  color: $accent-color-primary;
-  cursor: pointer;
-  border: none;
-  transition: opacity $timing-function $transition-duration
-      $accent-color-primary,
-    transform $timing-function $transition-duration;
-}
-.form-field input {
-  margin-left: 10px;
-  padding-left: 11px;
-  border: none;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  min-width: 320px;
-  outline: none;
-}
-.form-field .textarea {
-  min-width: 335px;
-}
-.form .button {
-  display: block;
-  margin-top: 30px;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.comment {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  color: #757575;
-  min-width: 330px;
-  outline: none;
-  padding: 0;
-}
-.comment-label {
-  display: inline-block;
-  position: absolute;
-  z-index: 2;
-  border: none;
-  padding-left: 16px;
-  top: 12px;
-  left: 1px;
-}
-.form .accept-offer {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-}
-.textarea:hover .comment-label,
-.textarea textarea:not(:placeholder-shown) + .comment-label,
-.textarea:focus-within .comment-label {
-  transform: translateY(-33px);
-  color: $accent-color-primary;
-  border: none;
-  cursor: pointer;
-  transition: opacity $timing-function $transition-duration
-      $accent-color-primary,
-    transform $timing-function $transition-duration;
-}
 .backdrop {
   position: fixed;
   z-index: 3;
@@ -181,4 +17,168 @@
 @media screen and (min-width: $tablet) {
 }
 @media screen and (min-width: $desktop) {
+  .form {
+    background-color: $background-color-primary;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    justify-content: center;
+    width: 450px;
+    height: 610px;
+    padding: 40px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: $text-color-primary;
+  }
+  .form-icon {
+    display: block;
+  }
+  .close-button {
+    position: absolute;
+    display: inline-block;
+    top: 8px;
+    right: 8px;
+    padding: 9px;
+    transition: fill var(--duration) var(--function);
+    fill: var(--primary-title-color);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+  }
+  .close-button:hover,
+  .close-button:focus {
+    outline: none;
+    fill: $accent-color-primary;
+  }
+  .form-field {
+    justify-content: left;
+    align-items: center;
+    padding-left: 19px;
+    display: flex;
+    margin-bottom: 30px;
+    min-height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative;
+  }
+  .form-field:hover,
+  .form-field:focus {
+    outline: none;
+    fill: $accent-color-primary;
+    border-color: $accent-color-primary;
+  }
+  .form-field > .form-icon {
+    display: block;
+    position: absolute;
+  }
+  .form-header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    max-width: 370px;
+    margin-top: 2px;
+    max-width: 370px;
+    margin-bottom: 30px;
+  }
+  .form-list {
+    max-width: 370px;
+  }
+  .form-field textarea {
+    border: none;
+    padding-top: 12px;
+  }
+
+  .form-input {
+    padding-left: 11px;
+  }
+  .form-field:hover .label,
+  .form-input:not(:placeholder-shown) + .label,
+  .form-field:focus-within .label {
+    transform: translateY(-33px) translateX(-20px);
+    color: $accent-color-primary;
+    cursor: pointer;
+    border: none;
+    transition: opacity $timing-function $transition-duration
+        $accent-color-primary,
+      transform $timing-function $transition-duration;
+  }
+  .form-field input {
+    margin-left: 10px;
+    padding-left: 11px;
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    min-width: 320px;
+    outline: none;
+  }
+  .form-field .textarea {
+    min-width: 335px;
+  }
+  .form .button {
+    display: block;
+    margin-top: 30px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .comment {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    min-width: 330px;
+    outline: none;
+    padding: 0;
+  }
+  .comment-label {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    border: none;
+    padding-left: 16px;
+    top: 12px;
+    left: 1px;
+  }
+  .form .accept-offer {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .textarea:hover .comment-label,
+  .textarea textarea:not(:placeholder-shown) + .comment-label,
+  .textarea:focus-within .comment-label {
+    transform: translateY(-33px);
+    color: $accent-color-primary;
+    border: none;
+    cursor: pointer;
+    transition: opacity $timing-function $transition-duration
+        $accent-color-primary,
+      transform $timing-function $transition-duration;
+  }
 }

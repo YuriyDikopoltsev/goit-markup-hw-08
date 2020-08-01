@@ -16,7 +16,6 @@ html {
   z-index: 1;
 }
 .section {
-  padding-top: 94px;
   justify-content: center;
 }
 .section-no-padding {
@@ -25,15 +24,32 @@ html {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: $mobile) {
+  .container {
+    width: $mobile;
+  }
+  .section {
+    padding-top: 60px;
+  }
 }
 @media screen and (min-width: $tablet) {
+  .container {
+    width: $tablet;
+  }
+  .section {
+    padding-top: 60px;
+  }
 }
 @media screen and (min-width: $desktop) {
+  .container {
+    width: $desktop;
+  }
+  .section {
+    padding-top: 95px;
+  }
 }
 
 .title {
@@ -116,5 +132,5 @@ textarea {
   display: block;
 }
 .hidden {
-  display: none;
+  visibility: hidden;
 }
