@@ -32,6 +32,8 @@
       visibility: hidden;
     }
   }
+  .header:after {
+  }
 }
 @media screen and (min-width: $tablet) {
   .header {

@@ -6,8 +6,7 @@
 }
 .social-network {
   display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
+  justify-content: center;
 
   & .social-item {
     display: block;

@@ -47,7 +47,9 @@
   .address {
     & .list {
       display: flex;
+      vertical-align: middle;
       align-items: center;
+
       & .item {
         align-items: center;
         justify-content: center;

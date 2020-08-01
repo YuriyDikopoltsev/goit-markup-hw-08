@@ -73,6 +73,8 @@ html {
 }
 .image {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .link {
   text-decoration: none;
@@ -133,4 +135,5 @@ textarea {
 }
 .hidden {
   visibility: hidden;
+  position: absolute;
 }
