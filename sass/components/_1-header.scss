@@ -1,52 +1,52 @@
+.header-menu-button .icon-header-menu-close {
+  display: none;
+}
+.header-menu-button.is-open .icon-header-menu-close {
+  display: block;
+}
+.header-menu-button.is-open .icon-header-menu {
+  display: none;
+}
 .header {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  padding-top: 24px;
-  padding-bottom: 32px;
   z-index: 2;
   background-color: $background-color-primary;
   & .container {
-    display: flex;
-    align-items: center;
-    height: 26px;
+    position: relative;
   }
-  & .navigation {
-    visibility: visible;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    margin-left: 85px;
-    margin-right: 305px;
+}
+.header-menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: $background-color-primary;
+  text-align: center;
+  height: 100px;
+  display: none;
+  &.is-open {
+    display: block;
   }
 }
 @media screen and (min-width: $mobile) {
   .header {
     padding: 16px 23px 16px 15px;
-    & .navigation {
-      visibility: hidden;
-    }
-    & .address {
-      visibility: hidden;
+  }
+
+  @media screen and (min-width: $tablet) {
+    & .container {
+      display: flex;
+      align-items: center;
     }
   }
-  .header:after {
-  }
-}
-@media screen and (min-width: $tablet) {
-  .header {
-    padding: 26px 15px 26px 15px;
-    & .navigation {
-      visibility: visible;
-      margin-left: 80px;
-      margin-right: 85px;
-    }
-    & .address {
-      visibility: visible;
-    }
-  }
+
+  // .header {
+  //   padding: 26px 15px 26px 15px;
+  //
+  // }
 }
 @media screen and (min-width: $desktop) {
   .header {
@@ -57,12 +57,8 @@
       height: 26px;
     }
     & .navigation {
-      visibility: visible;
       margin-left: 85px;
       margin-right: 305px;
     }
-  }
-  & .address {
-    visibility: visible;
   }
 }

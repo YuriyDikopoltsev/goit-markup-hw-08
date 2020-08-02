@@ -1,6 +1,11 @@
 .navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin-left: 85px;
+  margin-right: 305px;
   & .list {
-    display: flex;
     & .item {
       position: relative;
     }
@@ -16,12 +21,10 @@
       transform: translateY(35px);
       border-radius: 2px;
     }
-
     & .item:not(:last-child) {
       margin-right: 30px;
     }
   }
-
   & .link.current {
     color: $accent-color-primary;
   }
@@ -30,6 +33,9 @@
 @media screen and (min-width: $mobile) {
 }
 @media screen and (min-width: $tablet) {
+  .navigation .list {
+    display: flex;
+  }
 }
 @media screen and (min-width: $desktop) {
 }

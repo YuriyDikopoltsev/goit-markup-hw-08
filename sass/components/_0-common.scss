@@ -27,6 +27,13 @@ html {
   padding-left: 15px;
   padding-right: 15px;
 }
+.header-menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
 @media screen and (min-width: $mobile) {
   .container {
     width: $mobile;
@@ -36,6 +43,9 @@ html {
   }
 }
 @media screen and (min-width: $tablet) {
+  .header-menu-button {
+    display: none;
+  }
   .container {
     width: $tablet;
   }

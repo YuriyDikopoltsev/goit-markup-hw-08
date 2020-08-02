@@ -43,6 +43,21 @@
             </li>
           </ul>
         </address>
+        <button 
+      type="button" 
+      class="header-menu-button is-open" 
+      aria-expanded="false" 
+      data-menu-button>
+<svg 
+width="25" 
+height="25" 
+aria-label="Переключатель мобильного меню"
+>
+<use class="icon-header-menu" href="./images/sprite.svg#header_menu"></use>
+<use class="icon-header-menu-close" href="./images/sprite.svg#close_header_menu"></use>
+</svg>
+ </button>
+ <div class="header-menu-container is-open" data-menu>CONTAINER MENU</div> 
       </div>
     </header>
 
@@ -63,7 +78,7 @@
 <ul class="list form-list">
 
 <li class="form-field">
-  <input class="form-input class="form-input""
+  <input class="form-input"
           type="text"
           name="Name"
           id="Name"
@@ -467,6 +482,7 @@
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
 </script>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
